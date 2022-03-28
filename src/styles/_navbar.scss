@@ -1,0 +1,15 @@
+.nav-main-container{
+    height: 100vh;
+    background-color: $primary-img;
+}
+.nav-bnt-img-ul-container{
+    @include flex-center-column;
+    
+    ul{
+        list-style: none;
+    }
+}
+.img-nav{
+    width: 60px;
+    padding: 2px;
+}
