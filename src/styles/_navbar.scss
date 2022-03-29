@@ -3,6 +3,32 @@
     background-color: $primary-img;
     @include flex-center-column;
     justify-content: space-between;
+    transition: all 0.2s ease;
+    width: 4rem;
+}
+.nav-main-container.active{
+    transition: all 0.2s ease;
+    width: 12rem;
+
+    .btn-nav-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        p{
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: $white;
+            margin-left: 20px;
+            transition: all 0.2s ease;
+
+        }
+    }
+
+}
+.nav-main-container.active .nav-bnt-img-ul-container{
+    transition: all 0.2s ease;
+
 }
 .nav-bnt-img-ul-container{
     margin-top: 0.8rem;
@@ -16,12 +42,36 @@
 
     ul{
         list-style: none;
+        position: relative;
+        height: 12rem;
+        @include flex-center-column;
+        align-items: flex-start;
+        justify-content: space-evenly;
 
         li{
-            margin: 0.5rem 0.5rem;
-
+            // margin: 0.5rem 0.5rem;
+            position: static;
         }
     }
+}
+.icon-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    padding: 6px;
+    transition: 0.9s ;
+    
+    
+    span{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $white;
+    }
+}
+.icon-text-container:hover{
+    border: 2px $white solid;
 }
 .icon-nav{
     border: 2px transparent solid;
@@ -32,8 +82,8 @@
 }
 .icon-nav:hover{
     border: 2px $white solid;
-    background-color: $white;
-    color: $second-img;
+    // background-color: $white;
+    // color: $second-img;
 
 }
 .nav-user-container{

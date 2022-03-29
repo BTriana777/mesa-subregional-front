@@ -20,12 +20,15 @@ export const NavBar = () => {
   }
 
   return (
-    <nav className='nav-main-container'>
+    <nav className={`${navOpen? 'nav-main-container active' : 'nav-main-container'}`}>
       <div className='nav-bnt-img-ul-container'>
         <div className='btn-nav-container' onClick={handleClickOpenNav}>
           {
             navOpen?
-              <IoMdClose color='#fff' size={'35px'}  />
+            <>
+              <IoMdClose color='#fff' size={'35px'} />
+              <p>MSJO</p>
+            </>
             :
               <IoMdMenu color='#fff' size={'35px'} />
           }
@@ -35,7 +38,7 @@ export const NavBar = () => {
             <li>
               {
                 navOpen?
-                  <span>Home</span>
+                  <div className='icon-text-container'><FaHome className='icon-nav' size={'38px'} cursor='pointer'/><span>Home</span></div>
                 :
                   <FaHome className='icon-nav' size={'38px'} cursor='pointer'/>
               }
@@ -43,7 +46,7 @@ export const NavBar = () => {
             <li>
               {
                 navOpen?
-                  <span>Historia</span>
+                  <div className='icon-text-container'><FaInfo className='icon-nav' size={'36px'} cursor='pointer'/><span>Historia</span></div>
                 :
                   <FaInfo className='icon-nav' size={'36px'} cursor='pointer'/>
               }
@@ -51,7 +54,7 @@ export const NavBar = () => {
             <li>
               {
                 navOpen?
-                  <span>Noticias</span>
+                  <div className='icon-text-container'><BiNews className='icon-nav' size={'38px'} cursor='pointer'/><span>Noticias</span></div>
                 :
                   <BiNews className='icon-nav' size={'38px'} cursor='pointer'/>
               }
@@ -59,7 +62,12 @@ export const NavBar = () => {
         </ul>
       </div>
       <div className='nav-user-container'>
-        <FaUserAlt className='icon-nav' size={'38px'} cursor='pointer' />
+        {
+          navOpen?
+            <div className='icon-text-container'><span>Brandon</span><FaUserAlt className='icon-nav' size={'38px'} cursor='pointer' /></div>
+          :
+            <FaUserAlt className='icon-nav' size={'38px'} cursor='pointer' />
+        }
       </div>
     </nav>
   )
