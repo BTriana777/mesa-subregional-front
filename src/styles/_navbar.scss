@@ -1,15 +1,41 @@
 .nav-main-container{
     height: 100vh;
     background-color: $primary-img;
+    @include flex-center-column;
+    justify-content: space-between;
 }
 .nav-bnt-img-ul-container{
+    margin-top: 0.8rem;
     @include flex-center-column;
     
+    .img-nav{
+        width: 3.75rem;
+        padding: 0.28rem;
+        margin: 0.8rem 0;
+    }
+
     ul{
         list-style: none;
+
+        li{
+            margin: 0.5rem 0.5rem;
+
+        }
     }
 }
-.img-nav{
-    width: 60px;
-    padding: 2px;
+.icon-nav{
+    border: 2px transparent solid;
+    border-radius: 18px;
+    padding: 0.1rem;
+    transition: 0.2s;
+    color: #fff;
+}
+.icon-nav:hover{
+    border: 2px $white solid;
+    background-color: $white;
+    color: $second-img;
+
+}
+.nav-user-container{
+    margin-bottom: 1.25rem;
 }

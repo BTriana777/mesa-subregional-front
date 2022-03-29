@@ -2,8 +2,8 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { uiCloseNav, uiOpenNav } from '../../actions/ui';
 
-import { FaHome, FaInfoCircle, FaUserAlt} from 'react-icons/fa';
-import { ImNewspaper } from 'react-icons/im';
+import { FaHome, FaInfo, FaUserAlt} from 'react-icons/fa';
+import { BiNews } from 'react-icons/bi';
 import {IoMdMenu, IoMdClose } from 'react-icons/io';
 
 export const NavBar = () => {
@@ -37,7 +37,7 @@ export const NavBar = () => {
                 navOpen?
                   <span>Home</span>
                 :
-                  <FaHome color='#fff' size={'30px'}/>
+                  <FaHome className='icon-nav' size={'38px'} cursor='pointer'/>
               }
             </li>
             <li>
@@ -45,7 +45,7 @@ export const NavBar = () => {
                 navOpen?
                   <span>Historia</span>
                 :
-                  <FaInfoCircle color='#fff' size={'30px'}/>
+                  <FaInfo className='icon-nav' size={'36px'} cursor='pointer'/>
               }
             </li>
             <li>
@@ -53,13 +53,13 @@ export const NavBar = () => {
                 navOpen?
                   <span>Noticias</span>
                 :
-                  <ImNewspaper color='#fff' size={'30px'}/>
+                  <BiNews className='icon-nav' size={'38px'} cursor='pointer'/>
               }
             </li>
         </ul>
       </div>
       <div className='nav-user-container'>
-        <FaUserAlt color='#fff' size={'35px'} />
+        <FaUserAlt className='icon-nav' size={'38px'} cursor='pointer' />
       </div>
     </nav>
   )
