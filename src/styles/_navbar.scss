@@ -1,57 +1,60 @@
 .nav-main-container{
+    position: relative;
     height: 100vh;
     background-color: $primary-img;
     @include flex-center-column;
     justify-content: space-between;
     transition: all 0.2s ease;
     width: 4rem;
+    overflow: hidden;
 }
 .nav-main-container.active{
     transition: all 0.2s ease;
-    width: 12rem;
-
-    .btn-nav-container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        p{
-            font-size: 1.75rem;
-            font-weight: 600;
-            color: $white;
-            margin-left: 20px;
-            transition: all 0.2s ease;
-
-        }
-    }
-
+    width: 13rem;
 }
 .nav-main-container.active .nav-bnt-img-ul-container{
     transition: all 0.2s ease;
+}
+.nav-main-container.active .nav-user-container{
+    transform: translateX(0px);
+    transition: all 0.2s ease;
+}
+.btn-nav-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 18%;
 
+    p{
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: $white;
+        margin-left: 16px;
+    }
 }
 .nav-bnt-img-ul-container{
+    position: relative;
     margin-top: 0.8rem;
     @include flex-center-column;
+    width: 90%;
+
     
     .img-nav{
         width: 3.75rem;
         padding: 0.28rem;
-        margin: 0.8rem 0;
+        margin-top: 3rem;
     }
 
     ul{
         list-style: none;
-        position: relative;
+        position: absolute;
+        top: 100%;
+        left: 8%;
         height: 12rem;
         @include flex-center-column;
         align-items: flex-start;
         justify-content: space-evenly;
-
-        li{
-            // margin: 0.5rem 0.5rem;
-            position: static;
-        }
     }
 }
 .icon-text-container{
@@ -68,6 +71,8 @@
         font-size: 1.4rem;
         font-weight: 600;
         color: $white;
+        margin-left: 18px;
+
     }
 }
 .icon-text-container:hover{
@@ -82,10 +87,20 @@
 }
 .icon-nav:hover{
     border: 2px $white solid;
-    // background-color: $white;
-    // color: $second-img;
-
 }
 .nav-user-container{
+    position: absolute;
+    @include flex-center-column;
+    flex-direction: row;
+    bottom: 0;
     margin-bottom: 1.25rem;
+    transition: all 0.2s ease;
+    transform: translateX(-57px);
+    
+    span{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $white;
+        margin-right: 18px;
+    }
 }
