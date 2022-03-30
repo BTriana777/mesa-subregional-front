@@ -25,9 +25,9 @@ export const NavBar = () => {
         <div className='btn-nav-container' onClick={handleClickOpenNav}>
           {
           navOpen?
-            <IoMdClose color='#fff' size={'35px'} />
+            <IoMdClose color='#fff' size={'35px'} cursor='pointer' />
           :
-            <IoMdMenu color='#fff' size={'35px'} />
+            <IoMdMenu color='#fff' size={'35px'} cursor='pointer' />
           }
           <p>MSJO</p>
         </div>

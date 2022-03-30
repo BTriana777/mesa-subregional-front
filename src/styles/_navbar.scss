@@ -11,26 +11,12 @@
 .nav-main-container.active{
     transition: all 0.2s ease;
     width: 13rem;
-}
-.nav-main-container.active .nav-bnt-img-ul-container{
-    transition: all 0.2s ease;
-}
-.nav-main-container.active .nav-user-container{
-    transform: translateX(0px);
-    transition: all 0.2s ease;
-}
-.btn-nav-container{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    top: 0;
-    left: 18%;
-
-    p{
-        font-size: 1.75rem;
-        font-weight: 600;
-        color: $white;
-        margin-left: 16px;
+    .nav-bnt-img-ul-container{
+        transition: all 0.2s ease;
+    }
+    .nav-user-container{
+        transform: translateX(0px);
+        transition: all 0.2s ease;
     }
 }
 .nav-bnt-img-ul-container{
@@ -57,26 +43,48 @@
         justify-content: space-evenly;
     }
 }
+.btn-nav-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 18%;
+
+    p{
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: $white;
+        margin-left: 16px;
+    }
+}
 .icon-text-container{
     display: flex;
-    justify-content: center;
     align-items: center;
-    transition: all 0.2s ease;
     cursor: pointer;
     padding: 6px;
-    transition: 0.9s ;
-    
+    transition: 0.2s ;
+    width: 10rem;
+    padding: 0.4rem;
+    border-radius: 14px;
+    transition: all 0.2s ease;
     
     span{
         font-size: 1.4rem;
         font-weight: 600;
         color: $white;
         margin-left: 18px;
+    }
+
+    &:hover{
+        background-color: lighten($color: $primary-img, $amount: 16);
 
     }
-}
-.icon-text-container:hover{
-    border: 2px $white solid;
+
+    @media (max-width: 400px) {
+        span{
+            color: black;
+        }
+    }
 }
 .icon-nav{
     border: 2px transparent solid;
@@ -85,22 +93,24 @@
     transition: 0.2s;
     color: #fff;
 }
-.icon-nav:hover{
-    border: 2px $white solid;
-}
 .nav-user-container{
     position: absolute;
     @include flex-center-column;
     flex-direction: row;
     bottom: 0;
     margin-bottom: 1.25rem;
+    padding: 0.4rem;
+    border-radius: 14px;
     transition: all 0.2s ease;
-    transform: translateX(-57px);
+    right: 7px;
     
     span{
         font-size: 1.4rem;
         font-weight: 600;
         color: $white;
         margin-right: 18px;
+    }
+    &:hover{
+        background-color: lighten($color: $primary-img, $amount: 16);
     }
 }
