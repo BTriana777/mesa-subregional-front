@@ -45,12 +45,12 @@ export const NavBar = () => {
               <div className='icon-text-container'><BiNews className='icon-nav' size={'38px'} cursor='pointer'/><span>Noticias</span></div>
             </li>
             <li>
-              <div className='icon-text-container'><IoMdPhotos className='icon-nav' size={'38px'} cursor='pointer'/><span>Fotos</span></div>
+              <div className='icon-text-container'><IoMdPhotos className='icon-nav' size={'38px'} cursor='pointer'/><span>Noticias</span></div>
             </li>
         </ul>
       </div>
       <div className='nav-user-container'>
-        <span>Brandon</span>
+        <span>Iniciar Sesion</span>
         <FaUserAlt className='icon-nav' size={'38px'} cursor='pointer' />
       </div>
     </nav>
