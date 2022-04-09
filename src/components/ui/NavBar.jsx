@@ -4,7 +4,7 @@ import { uiCloseNav, uiOpenNav } from '../../actions/ui';
 
 import { FaHome, FaInfo, FaUserAlt} from 'react-icons/fa';
 import { BiNews } from 'react-icons/bi';
-import {IoMdMenu, IoMdClose } from 'react-icons/io';
+import {IoMdMenu, IoMdClose, IoMdPhotos } from 'react-icons/io';
 
 export const NavBar = () => {
 
@@ -43,6 +43,9 @@ export const NavBar = () => {
             </li>
             <li>
               <div className='icon-text-container'><BiNews className='icon-nav' size={'38px'} cursor='pointer'/><span>Noticias</span></div>
+            </li>
+            <li>
+              <div className='icon-text-container'><IoMdPhotos className='icon-nav' size={'38px'} cursor='pointer'/><span>Fotos</span></div>
             </li>
         </ul>
       </div>

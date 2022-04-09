@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export const MesaScreen = () => {
   return (
-    <div>MesaScreen</div>
-  )
-}
+    <div>
+
+    </div>
+  );
+};
