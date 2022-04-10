@@ -11,7 +11,7 @@ import { NavBar } from '../components/ui/NavBar';
 export const AppRouter = () => {
   return (
     <>
-    <NavBar />
+    {/* <NavBar /> */}
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<MesaScreen />} />

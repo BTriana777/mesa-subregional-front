@@ -17,3 +17,11 @@ body{
     align-items: center;
     justify-content: center;
 }
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
