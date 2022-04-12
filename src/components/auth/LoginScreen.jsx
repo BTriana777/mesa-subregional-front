@@ -1,6 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export const LoginScreen = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className='auth-main-container'>
       <div className='auth-back-img'>
@@ -18,6 +22,7 @@ export const LoginScreen = () => {
           </div> 
         </div>
         <button>Iniciar Sesion</button>
+        <p>No tienes cuenta? <span onClick={()=> navigate("/register")}>Registrate</span></p>
       </form>
     </div>
   )
