@@ -1,5 +1,5 @@
 .nav-main-container{
-    position: relative;
+    position: fixed;
     height: 100vh;
     background-color: $primary-img;
     @include flex-center-column;

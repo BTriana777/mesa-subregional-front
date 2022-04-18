@@ -76,7 +76,7 @@ export const NavBar = () => {
           </li>
         </ul>
       </div>
-      <div className="nav-user-container" onClick={() => navigate("/register")}>
+      <div className="nav-user-container" onClick={() => navigate("/login")}>
         <span>Iniciar Sesion</span>
         <FaUserAlt className="icon-nav" size={"38px"} cursor="pointer" />
       </div>
