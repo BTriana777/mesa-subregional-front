@@ -27,4 +27,8 @@ textarea:focus, input:focus{
 }
 .screen-main{
     padding-left: 3.96rem;
+
+    @media (max-width: 450px) {
+        padding: 0;
+    }
 }
