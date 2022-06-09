@@ -123,7 +123,7 @@ export const RegisterScreen = () => {
         <button  >Registrarme</button>
         <p>
           Ya tengo cuenta!{" "}
-          <span onClick={() => navigate("/login")}>iniciar sesion</span>
+          <span onClick={() => navigate("/mesa-subregional-front/login")}>iniciar sesion</span>
         </p>
       </form>
     </div>

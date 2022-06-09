@@ -42,7 +42,7 @@ export const NavBar = () => {
         />
         <ul>
           <li>
-            <div className="icon-text-container" onClick={() => navigate("/")}>
+            <div className="icon-text-container" onClick={() => {dispatch(uiCloseNav()); navigate("/"); }}>
               <FaHome className="icon-nav" size={"38px"} cursor="pointer" />
               <span>Home</span>
             </div>
@@ -50,7 +50,7 @@ export const NavBar = () => {
           <li>
             <div
               className="icon-text-container"
-              onClick={() => navigate("/history")}
+              onClick={() => {dispatch(uiCloseNav()); navigate("/mesa-subregional-front/history"); }}
             >
               <FaInfo className="icon-nav" size={"36px"} cursor="pointer" />
               <span>Historia</span>
@@ -59,7 +59,7 @@ export const NavBar = () => {
           <li>
             <div
               className="icon-text-container"
-              onClick={() => navigate("/news")}
+              onClick={() => {dispatch(uiCloseNav()); navigate("/mesa-subregional-front/news"); }}
             >
               <BiNews className="icon-nav" size={"38px"} cursor="pointer" />
               <span>Noticias</span>
@@ -68,7 +68,7 @@ export const NavBar = () => {
           <li>
             <div
               className="icon-text-container"
-              onClick={() => navigate("/gallery")}
+              onClick={() => {dispatch(uiCloseNav()); navigate("/mesa-subregional-front/gallery"); }}
             >
               <IoMdPhotos className="icon-nav" size={"38px"} cursor="pointer" />
               <span>Galeria</span>
@@ -76,7 +76,7 @@ export const NavBar = () => {
           </li>
         </ul>
       </div>
-      <div className="nav-user-container" onClick={() => navigate("/login")}>
+      <div className="nav-user-container" onClick={() => {dispatch(uiCloseNav()); navigate("/mesa-subregional-front/login"); }}>
         <span>Iniciar Sesion</span>
         <FaUserAlt className="icon-nav" size={"38px"} cursor="pointer" />
       </div>

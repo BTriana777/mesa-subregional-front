@@ -3,6 +3,7 @@ import {
     BrowserRouter,
     Routes,
     Route,
+    Navigate
   } from "react-router-dom";
 import { LoginScreen } from '../components/auth/LoginScreen';
 import { RegisterScreen } from '../components/auth/RegisterScreen';
@@ -18,13 +19,15 @@ export const AppRouter = () => {
     <BrowserRouter> 
         <NavBar />  
         <Routes>
-            <Route path="/" element={<MesaScreen />} />
-            <Route path="/login" element={<LoginScreen />} />
-            <Route path="/register" element={<RegisterScreen />} />
-            <Route path="/history" element={<InfoScreen />} />
-            <Route path="/news" element={<NewScreen />} />
-            <Route path="/gallery" element={<GalleryScreen />} />
+            <Route path="/mesa-subregional-front/" element={<MesaScreen />} />
+            <Route path="/mesa-subregional-front/login" element={<LoginScreen />} />
+            <Route path="/mesa-subregional-front/register" element={<RegisterScreen />} />
+            <Route path="/mesa-subregional-front/history" element={<InfoScreen />} />
+            <Route path="/mesa-subregional-front/news" element={<NewScreen />} />
+            <Route path="/mesa-subregional-front/gallery" element={<GalleryScreen />} />
             
+
+            <Route path="/*" element={<Navigate to="/mesa-subregional-front/" replace />}/>
         </Routes>
     </BrowserRouter>
     </>

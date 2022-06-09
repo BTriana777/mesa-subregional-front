@@ -22,7 +22,7 @@ export const LoginScreen = () => {
           </div> 
         </div>
         <button>Iniciar Sesion</button>
-        <p>No tienes cuenta? <span onClick={()=> navigate("/register")}>Registrate</span></p>
+        <p>No tienes cuenta? <span onClick={()=> navigate("/mesa-subregional-front/register")}>Registrate</span></p>
       </form>
     </div>
   )
