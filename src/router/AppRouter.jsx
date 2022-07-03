@@ -27,7 +27,7 @@ export const AppRouter = () => {
             <Route path="/mesa-subregional-front/gallery" element={<GalleryScreen />} />
             
 
-            <Route path="/*" element={<Navigate to="/mesa-subregional-front/" replace />}/>
+            <Route path="/*" element={<Navigate to="/mesa-subregional-front/" replacec  />}/>
         </Routes>
     </BrowserRouter>
     </>
