@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/mesa-subregional-front/static/css/main.f6c725b9.css",
-    "main.js": "/mesa-subregional-front/static/js/main.a6db6699.js",
+    "main.css": "/mesa-subregional-front/static/css/main.07cd4406.css",
+    "main.js": "/mesa-subregional-front/static/js/main.22af2bb1.js",
+    "static/media/mesa_logo_white.svg": "/mesa-subregional-front/static/media/mesa_logo_white.0bf1f59dcffe117d87d4a6b5f1279bd3.svg",
     "index.html": "/mesa-subregional-front/index.html",
-    "main.f6c725b9.css.map": "/mesa-subregional-front/static/css/main.f6c725b9.css.map",
-    "main.a6db6699.js.map": "/mesa-subregional-front/static/js/main.a6db6699.js.map"
+    "main.07cd4406.css.map": "/mesa-subregional-front/static/css/main.07cd4406.css.map",
+    "main.22af2bb1.js.map": "/mesa-subregional-front/static/js/main.22af2bb1.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6c725b9.css",
-    "static/js/main.a6db6699.js"
+    "static/css/main.07cd4406.css",
+    "static/js/main.22af2bb1.js"
   ]
 }
