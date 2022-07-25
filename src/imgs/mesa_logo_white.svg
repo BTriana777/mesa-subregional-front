@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="604.677 141.837 251.06 231.82" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#9DEEA2;}
+	.st2{fill:#BEBB98;}
+	.st3{fill:#8EB1EB;}
+	.st4{fill:#57E3DD;}
+	.st5{fill:#F1EEBB;}
+	.st6{fill:#EE66E6;}
+	.st7{fill:#E094BB;}
+	.st8{fill:#DDD9AC;}
+	.st9{fill:#57E2DC;}
+	.st10{fill:#9B867F;}
+	.st11{fill:#F2E110;}
+	.st12{fill:#DAD6AB;}
+	.st13{fill:#5A885D;}
+	.st14{fill:#57E2DB;}
+	.st15{fill:#8EB1EA;}
+	.st16{fill:#727059;}
+	.st17{fill:#FFB000;}
+	.st18{fill:#F7931E;}
+	.st19{fill:#1CFF00;}
+	.st20{fill:none;stroke:#9C9B9B;stroke-width:0.5038;stroke-miterlimit:10;}
+	.st21{fill:none;stroke:#FFB000;stroke-width:8;stroke-miterlimit:10;}
+	.st22{fill:#ADD304;}
+	.st23{fill:#73BFE1;}
+	.st24{fill:#EC8810;}
+	.st25{fill:none;stroke:#EC8810;stroke-width:7;stroke-miterlimit:10;}
+</style>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 484.116859, 11.747417)">
+    <polygon class="st0" points="120.56,173.72 246.02,216.91 371.48,173.72 246.02,130.09 &#9;"/>
+    <polygon class="st0" points="146.16,333.28 120.67,333.28 120.56,179.63 145.56,188.27 &#9;"/>
+    <polygon class="st0" points="258.29,361.91 233.29,361.91 233.29,217.82 246.02,222.82 258.29,217.82 &#9;"/>
+    <polygon class="st0" points="346.01,333.19 371.51,333.19 371.62,179.54 346.61,188.18 &#9;"/>
+  </g>
+</svg>

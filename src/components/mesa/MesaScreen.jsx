@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
-import { Paper, Button } from "@mui/material";
+import MesaLogoWhite from "../../imgs/mesa_logo_white.svg";
+import { BsArrowDownCircleFill } from "react-icons/bs";
 
 const imgsCarousel = [
   {
@@ -21,12 +22,6 @@ export const MesaScreen = () => {
   return (
     <div className="screen-main home-main">
       <div className="home-main-firts">
-        
-        <div className="box">
-          <div className="wave -one"></div>
-          <div className="wave -two"></div>
-          <div className="wave -three"></div>
-        </div>
         <div className="back-color"></div>
         <Carousel
           className="back-container"
@@ -41,15 +36,16 @@ export const MesaScreen = () => {
             ></div>
           ))}
         </Carousel>
-        
+
         <div className="home-main-firts-content">
-          <img src="https://i.imgur.com/HcBRR1s.png" alt="logo" />
-          {/* <div className="text">
-            <p>Porque los Jovenes mas que una Promesa, Somos una Realidad.</p>
-            <span className="text-bar"></span>
-          </div> */}
+          <img src={MesaLogoWhite} alt="logo" />
+          <div className="text">
+            <h1>Mesa Subregional de Juventud</h1>
+            <p>Mas que una promesa, somos una realidad.</p>
+          </div>
         </div>
 
+        <BsArrowDownCircleFill className="arrow-icon" color="white" size={28} />
       </div>
       <h1>fasd</h1>
       <h1>fasd</h1>
